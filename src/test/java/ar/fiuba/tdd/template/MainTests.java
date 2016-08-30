@@ -8,11 +8,6 @@ import static org.junit.Assert.assertTrue;
 
 public class MainTests {
 
-    @Test
-    public void dummy() {
-        assertEquals(0, 0);
-    }
-
     @Test(expected = AssertionError.class)
     public void removeElementInEmptyColaThrowsException() {
         Cola<String> cola = new Cola<>();
