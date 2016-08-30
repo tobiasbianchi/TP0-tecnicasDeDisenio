@@ -1,4 +1,4 @@
-package ar.fiuba.tdd.tp0;
+package ar.fiuba.tdd.tp0.interfaces;
 
 /**
  * Created by tobias on 27/08/16.
