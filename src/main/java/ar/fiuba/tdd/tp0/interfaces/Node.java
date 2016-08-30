@@ -1,14 +1,14 @@
 package ar.fiuba.tdd.tp0.interfaces;
 
 
-public interface Node {
+public interface Node<T> {
 
-    public Object getValue() throws AssertionError;
+    T getValue() throws AssertionError;
 
-    public Node next() throws AssertionError;
+    Node<T> next() throws AssertionError;
 
-    public Node addLast(Object item);
+    Node<T> addLast(T item);
 
-    public int amountOfLinkedNodes();
+    int amountOfLinkedNodes();
 
 }

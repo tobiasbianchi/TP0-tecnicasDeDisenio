@@ -1,14 +1,16 @@
 package ar.fiuba.tdd.tp0;
 
-import ar.fiuba.tdd.tp0.Nodes.EmptyNode;
 import ar.fiuba.tdd.tp0.interfaces.Node;
 import ar.fiuba.tdd.tp0.interfaces.Queue;
 
+import ar.fiuba.tdd.tp0.nodes.EmptyNode;
+
+
 public class Cola<T> implements Queue<T> {
-    private Node top;
+    private Node<T> top;
 
     public Cola() {
-        top = new EmptyNode();
+        top = new EmptyNode<>();
     }
 
     public int size() {
@@ -24,7 +26,7 @@ public class Cola<T> implements Queue<T> {
     }
 
     public T top() throws AssertionError {
-        return ( T )top.getValue();
+        return top.getValue();
     }
 
     public void remove() throws AssertionError {
