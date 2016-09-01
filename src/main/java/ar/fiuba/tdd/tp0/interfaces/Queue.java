@@ -11,7 +11,7 @@ public interface Queue<T> {
 
     void add(T item);
 
-    T top() throws AssertionError;
+    T top();
 
-    void remove() throws AssertionError;
+    void remove();
 }

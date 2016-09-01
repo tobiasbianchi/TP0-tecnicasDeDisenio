@@ -11,11 +11,11 @@ class BasicNode<T> implements Node<T> {
         this.next = new EmptyNode<>();
     }
 
-    public T getValue() throws AssertionError {
+    public T getValue() {
         return value;
     }
 
-    public Node<T> next() throws AssertionError {
+    public Node<T> next()  {
         return next;
     }
 

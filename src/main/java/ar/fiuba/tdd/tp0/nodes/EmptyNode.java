@@ -4,11 +4,11 @@ import ar.fiuba.tdd.tp0.interfaces.Node;
 
 public class EmptyNode<T> implements Node<T> {
 
-    public T getValue() throws AssertionError {
+    public T getValue() {
         throw new AssertionError();
     }
 
-    public Node<T> next() throws AssertionError {
+    public Node<T> next() {
         throw new AssertionError();
     }
 
